@@ -61,3 +61,57 @@ console.log("a" * 3);
 
 console.log("5" * "9");
 console.log(typeof ("5" * "9"));
+
+const bol1 = 81;
+const bol2 = 9;
+
+console.log(bol1 / bol2);
+
+console.log(bol1 / "9");
+console.log(bol1 / "dokuz");
+
+console.log(bol2 / 0);
+console.log(-61 / 0);
+
+console.log(0 / 5);
+console.log(0 / -5);
+
+console.log(57 / 9);
+
+const mod1 = 57;
+const mod2 = 9;
+
+console.log(mod1 % mod2);
+
+console.log(22 % 7);
+
+const benimSayim = 967;
+
+const birlerBas = benimSayim % 10;
+console.log(birlerBas);
+const onlarBas = (benimSayim % 100) / 10;
+console.log(onlarBas);
+
+const yuzlerBas = benimSayim / 100;
+console.log(yuzlerBas);
+
+console.log(
+  `YuzlerBas: ${Math.trunc(yuzlerBas)}, OnlarBas: ${Math.trunc(
+    onlarBas
+  )}, birlerlBas: ${birlerBas}`
+);
+
+const hazirSayi = 56.78888;
+
+console.log(`hairSayi of Circle: ${hazirSayi.toFixed(3)}`);
+console.log(`hairSayi of Circle: ${Math.floor(hazirSayi)}`);
+console.log(`hairSayi of Circle: ${Math.ceil(hazirSayi)}`);
+console.log(`hairSayi of Circle: ${Math.trunc(hazirSayi)}`);
+console.log(`hairSayi of Circle: ${Math.round(hazirSayi)}`);
+
+const randomNum = Math.random();
+console.log(randomNum);
+
+const randomNum2 = Math.random() * 10;
+console.log(randomNum2 + 1);
+console.log(Math.round(Math.random() * 10));
